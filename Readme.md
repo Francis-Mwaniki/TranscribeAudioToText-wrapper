@@ -8,3 +8,10 @@ npm install assemblyai
 import { AssemblyAi } from 'assemblyai';
 ```
 
+## What you need to use this wrapper
+- An AssemblyAi account
+- An API key
+- An audio file to upload
+
+
+ That's it! You're ready to go!
