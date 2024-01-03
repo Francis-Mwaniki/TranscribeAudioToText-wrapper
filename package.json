@@ -1,6 +1,6 @@
 {
-  "name": "assembly",
-  "version": "1.0.0",
+  "name": "franc-audio-to-text",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "type": "commonjs",
@@ -8,8 +8,19 @@
     "build": "tsc",
     "start": "node test.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+     "typescript",
+      "assemblyai",
+      "audio",
+      "text",
+      "speech",
+      "recognition",
+      "natural",
+      "language",
+      "processing",
+      "nlp"
+  ],
+  "author": "francis mwaniki",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.6",
