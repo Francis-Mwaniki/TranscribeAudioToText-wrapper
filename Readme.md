@@ -1,11 +1,11 @@
 # Assembly Ai wrapper 
 ## Installation
 ```bash
-npm install assemblyai
+npm install franc-audio-to-text
 ```
 ## Usage with Typescript
 ```typescript
-import TranscribeAudioToText from "TranscribeAudioToText";
+import TranscribeAudioToText from "franc-audio-to-text";
 ```
 
 ## What you need to use this wrapper
@@ -16,7 +16,7 @@ import TranscribeAudioToText from "TranscribeAudioToText";
 
 ## Demo - Test using the following code
 ```typescript
-import TranscribeAudioToText from "TranscribeAudioToText";
+import TranscribeAudioToText from "franc-audio-to-text";
 import * as dotenv from 'dotenv';
 dotenv.config();
 const apiKey = process.env.ASSEMBLY_API_KEY!; // User provides their API key
@@ -34,8 +34,8 @@ const customAI = new TranscribeAudioToText(apiKey);
 })();
 ```
 
-## Or run the following commands to test
-```bash
-npm install && npm run build && npm run start
-```
+## Hint and note
+ this wrapper supports only typescript
+ ignore typescript warning with `natural package`
+
  That's it! You're ready to go!
