@@ -1,6 +1,6 @@
 {
   "name": "franc-audio-to-text",
-  "version": "1.0.3",
+  "version": "2.0.2",
   "description": "",
   "main": "index.js",
   "type": "commonjs",
@@ -15,7 +15,6 @@
       "text",
       "speech",
       "recognition",
-      "natural",
       "language",
       "processing",
       "nlp"

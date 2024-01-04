@@ -1,4 +1,7 @@
 # Assembly Ai wrapper 
+
+<!-- demo -->
+[DEMO WITH NEXTJS](https://next-transcriber.vercel.app)
 ## Installation
 ```bash
 npm install franc-audio-to-text
@@ -34,8 +37,26 @@ const customAI = new TranscribeAudioToText(apiKey);
 })();
 ```
 
+# Changelog for franc-audio-to-text
+
+## [2.0.0] - 2024-01-04 (Current version)
+
+### Removed
+
+- **Removed 'natural' package**: Due to persistent bugs causing issues with language detection, the 'natural' package dependency has been removed from the project.
+
+
+
+
 ## Hint and note
  this wrapper supports only typescript
  ignore typescript warning with `natural package`
 
  That's it! You're ready to go!
+
+
+## support or contact
+Having trouble with this wrapper?
+please contact me at <!-- francismwaniki630@gmail.com -->
+[E-mail me](mailto:francismwaniki630@gmail.com)
+
