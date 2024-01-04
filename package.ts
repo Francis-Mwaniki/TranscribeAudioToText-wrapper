@@ -1,5 +1,5 @@
 import { AssemblyAI,Transcript } from 'assemblyai';
-import * as natural from "natural"
+
 class TranscribeAudioToText {
   private client: AssemblyAI;
 
@@ -18,20 +18,20 @@ class TranscribeAudioToText {
         }
         const transcript: Transcript = await this.client.transcripts.create(config);
         if (transcript.text !== null && transcript.text !== undefined) {
-           // Tokenizing the transcript into sentences using natural's SentenceTokenizer
-        const tokenizer = new natural.SentenceTokenizer();
-        const sentences = tokenizer.tokenize(transcript.text);
-
-        // Creating paragraphs every two sentences
+           // Splitting the text into sentences at every two 2 sentences (.) and adding a line break after every second sentence
         let paragraphedText = '';
-        for (let i = 0; i < sentences.length; i++) {
-          paragraphedText += sentences[i];
-          if ((i + 1) % 2 === 0) {
-            paragraphedText += '\n\n\n'; // Adding two line breaks after every second sentence
+        let sentenceCount = 0;
+        const sentences = transcript.text.split('.');
+        sentences.forEach((sentence) => {
+          if (sentenceCount === 2) {
+            paragraphedText += `${sentence}.\n\n`;
+            sentenceCount = 0;
           } else {
-            paragraphedText += '  '; // Adding a space after every first sentence in the pair
+            paragraphedText += `${sentence}.`;
+            sentenceCount += 1;
           }
-        }
+        });
+        
 
         return paragraphedText;
         } else {
