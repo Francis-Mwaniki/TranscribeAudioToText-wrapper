@@ -1,33 +1,33 @@
 {
   "name": "franc-audio-to-text",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
-    "start": "node test.js"
+    "start": "ts-node index.ts",
+    "build": "tsc"
   },
   "keywords": [
-     "typescript",
-      "assemblyai",
-      "audio",
-      "text",
-      "speech",
-      "recognition",
-      "language",
-      "processing",
-      "nlp"
+    "typescript",
+    "assemblyai",
+    "audio",
+    "text",
+    "speech",
+    "recognition",
+    "language",
+    "processing",
+    "nlp"
   ],
   "author": "francis mwaniki",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.6",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "assemblyai": "^4.1.0",
-    "dotenv": "^16.3.1",
-    "natural": "^6.10.4"
+    "dotenv": "^16.3.1"
   }
 }

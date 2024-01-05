@@ -1,4 +1,4 @@
-import TranscribeAudioToText from "./package";
+import TranscribeAudioToText from "../src/package";
 import * as dotenv from 'dotenv';
 dotenv.config();
 const apiKey = process.env.ASSEMBLY_API_KEY!; // User provides their API key
