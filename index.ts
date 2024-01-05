@@ -1,4 +1,4 @@
-import TranscribeAudioToText from "./package"
+import TranscribeAudioToText from "./src/package"
 
 
 export default TranscribeAudioToText;

@@ -50,7 +50,7 @@ const customAI = new TranscribeAudioToText(apiKey);
 
 ## Hint and note
  this wrapper supports only typescript
- ignore typescript warning with `natural package`
+
 
  That's it! You're ready to go!
 
